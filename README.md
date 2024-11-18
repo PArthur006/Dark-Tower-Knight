@@ -1,1 +1,62 @@
-# Dark-Tower-Knight
+Aqui está o README revisado conforme solicitado:  
+
+---
+
+# 🏰 **Dark Tower Knight**  
+
+**Dark Tower Knight** é um jogo 2D em desenvolvimento, criado como parte da disciplina **Desenvolvimento de Software** da **UnB-FCTE**. Inspirado por uma narrativa rica e mecânicas envolventes, o jogo transporta os jogadores para o mundo de **Amarelo Girassol**, um feudo ameaçado por forças das trevas.  
+
+---
+
+## 🌟 **Contexto do Mundo**  
+
+O Feudo **Amarelo Girassol** é um reino próspero, localizado em uma vasta planície cercada por florestas encantadas e montanhas imponentes. Governado pela linhagem da princesa Lysandra, o reino floresceu graças a suas magias ancestrais que garantem equilíbrio e abundância.  
+
+No entanto, um antigo inimigo, **Rei Thalion**, ameaça destruir a paz do feudo. Exilado há muitos anos por sua tentativa de usurpar o trono e explorar o poder mágico da princesa, Thalion retorna das sombras como um ser imortal, liderando um exército de criaturas das trevas. Ele busca capturar Lysandra e usar suas habilidades mágicas para mergulhar o mundo em uma era de escuridão eterna.  
+
+---
+
+## 🎮 **Sobre o Jogo**  
+
+Em **Dark Tower Knight**, o jogador assume o papel de um cavaleiro do Feudo **Amarelo Girassol**. Sua missão é enfrentar desafios, proteger o reino e resgatar a princesa Lysandra das garras do Rei Thalion.  
+
+- **Plataforma de Desenvolvimento**: [Godot Engine](https://godotengine.org/)  
+- **Gênero**: Aventura 2D para um jogador, com combate estratégico e narrativa envolvente.  
+
+---
+
+## 🛡️ **Equipe de Desenvolvimento**  
+
+O projeto está sendo desenvolvido pelo **Feudo Amarelo Girassol**, uma equipe estruturada em papéis gamificados conforme exigido pela disciplina:  
+
+- **Bruno Montoro** ([Duque](https://github.com/BrunoMontoro)) – Líder  
+- **Ana Beatriz Wirthmann** ([Conselheira](https://github.com/anawirthmann)) – Co-líder  
+- **Pedro Arthur Rodrigues** ([Cavaleiro](https://github.com/PArthur006)) – Programador  
+- **Gabriel Monsores** ([Cavaleiro](https://github.com/Gabriel-Monsores)) – Programador  
+- **João Guilherme de Oliveira** ([Cavaleiro](https://github.com/JoaoGSantana10)) – Programador  
+- **Maria Luana Lopes** ([Cavaleira](https://github.com/MLuana725)) – Programadora  
+
+---
+
+## 🔮 **Objetivos do Desenvolvimento**  
+
+- Criar mecânicas desafiadoras e imersivas de combate.  
+- Desenvolver um enredo cativante com elementos de fantasia medieval.  
+- Implementar gráficos 2D que transmitam a atmosfera sombria e mágica do jogo.  
+- Permitir exploração em um mundo 2D rico e detalhado.  
+
+---
+
+## 🌱 **Contribuições e Feedback**  
+
+Estamos abertos a sugestões e contribuições para tornar **Dark Tower Knight** ainda melhor. Para feedback ou relatórios de bugs, abra uma [issue](https://github.com/PArthur006/Dark-Tower-Knight/issues).  
+
+---
+
+## 🏆 **Licença**  
+
+Este projeto foi desenvolvido para fins acadêmicos. Todos os direitos estão reservados à equipe **Feudo Amarelo Girassol - 2024/2** e à **UnB-FCTE**.  
+
+---  
+
+> **"Proteja Lysandra. Derrote Thalion. Traga a luz de volta ao Feudo Amarelo Girassol."**  
