@@ -29,12 +29,12 @@ Em **Dark Tower Knight**, o jogador assume o papel de um cavaleiro do Feudo **Am
 
 O projeto está sendo desenvolvido pelo **Feudo Amarelo Girassol**, uma equipe estruturada em papéis gamificados conforme exigido pela disciplina:  
 
-- **Bruno Montoro** ([Duque](https://github.com/BrunoMontoro)) – Líder  
-- **Ana Beatriz Wirthmann** ([Conselheira](https://github.com/anawirthmann)) – Co-líder  
-- **Pedro Arthur Rodrigues** ([Cavaleiro](https://github.com/PArthur006)) – Programador  
-- **Gabriel Monsores** ([Cavaleiro](https://github.com/Gabriel-Monsores)) – Programador  
-- **João Guilherme de Oliveira** ([Cavaleiro](https://github.com/JoaoGSantana10)) – Programador  
-- **Maria Luana Lopes** ([Cavaleira](https://github.com/MLuana725)) – Programadora  
+- **([Bruno Montoro](https://github.com/BrunoMontoro))** Duque – Líder  
+- **([Ana Beatriz Wirthmann](https://github.com/anawirthmann))** Conselheira – Co-líder  
+- **([Pedro Arthur Rodrigues](https://github.com/PArthur006))** Cavaleiro – Programador  
+- **([Gabriel Monsores](https://github.com/Gabriel-Monsores))** Cavaleiro – Programador  
+- **([João Guilherme de Oliveira](https://github.com/JoaoGSantana10))** Cavaleiro – Programador  
+- **([Maria Luana Lopes](https://github.com/MLuana725))** Cavaleira – Programadora  
 
 ---
 
