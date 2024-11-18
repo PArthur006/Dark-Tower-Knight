@@ -1,7 +1,3 @@
-Aqui está o README revisado conforme solicitado:  
-
----
-
 # 🏰 **Dark Tower Knight**  
 
 **Dark Tower Knight** é um jogo 2D em desenvolvimento, criado como parte da disciplina **Desenvolvimento de Software** da **UnB-FCTE**. Inspirado por uma narrativa rica e mecânicas envolventes, o jogo transporta os jogadores para o mundo de **Amarelo Girassol**, um feudo ameaçado por forças das trevas.  
