@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dri3gcrbykocd"
-path="res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"
+uid="uid://qfoyvt4vo7be"
+path="res://.godot/imported/Esqueleto spritesheet completo.png-ad8ca1d0b29bd92823c018bad4e9a842.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cenario/mk_16_16_nature_tileset_godot/tileset_mk_16_16_nature_tileset_godot.png"
-dest_files=["res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"]
+source_file="res://Assets/Sprites/Inimigos/Esqueleto spritesheet completo.png"
+dest_files=["res://.godot/imported/Esqueleto spritesheet completo.png-ad8ca1d0b29bd92823c018bad4e9a842.ctex"]
 
 [params]
 

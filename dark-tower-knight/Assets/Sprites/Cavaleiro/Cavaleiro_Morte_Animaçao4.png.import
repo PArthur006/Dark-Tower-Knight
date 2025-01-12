@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dri3gcrbykocd"
-path="res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"
+uid="uid://rb0adohtonrw"
+path="res://.godot/imported/Cavaleiro_Morte_Animaçao4.png-8ca8a1f96795f09b2eb471f51b693120.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cenario/mk_16_16_nature_tileset_godot/tileset_mk_16_16_nature_tileset_godot.png"
-dest_files=["res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro_Morte_Animaçao4.png"
+dest_files=["res://.godot/imported/Cavaleiro_Morte_Animaçao4.png-8ca8a1f96795f09b2eb471f51b693120.ctex"]
 
 [params]
 

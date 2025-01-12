@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dri3gcrbykocd"
-path="res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"
+uid="uid://df1k2pu1qvc7y"
+path="res://.godot/imported/Vilão_1_animacao_andar4.png-49bcbeba582f8ff417eb52b59bca2b6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cenario/mk_16_16_nature_tileset_godot/tileset_mk_16_16_nature_tileset_godot.png"
-dest_files=["res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"]
+source_file="res://Assets/Sprites/Inimigos/Animações-Rei_Sombrio/Vilão_1_animacao_andar4.png"
+dest_files=["res://.godot/imported/Vilão_1_animacao_andar4.png-49bcbeba582f8ff417eb52b59bca2b6c.ctex"]
 
 [params]
 
