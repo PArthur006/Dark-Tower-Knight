@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dri3gcrbykocd"
-path="res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"
+uid="uid://d042hbq0lx1w1"
+path="res://.godot/imported/Layer_0004_Lights.png-c9b85fd85f83bf81bebe39e666ea8a1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cenario/mk_16_16_nature_tileset_godot/tileset_mk_16_16_nature_tileset_godot.png"
-dest_files=["res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"]
+source_file="res://Assets/Cenario/Free Pixel Art Forest/PNG/Background layers/Layer_0004_Lights.png"
+dest_files=["res://.godot/imported/Layer_0004_Lights.png-c9b85fd85f83bf81bebe39e666ea8a1c.ctex"]
 
 [params]
 

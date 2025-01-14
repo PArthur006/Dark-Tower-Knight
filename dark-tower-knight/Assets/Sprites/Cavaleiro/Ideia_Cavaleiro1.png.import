@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dri3gcrbykocd"
-path="res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"
+uid="uid://df45tl3pw24xb"
+path="res://.godot/imported/Ideia_Cavaleiro1.png-5eb1c166059801cfe8efc874d74fdeba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cenario/mk_16_16_nature_tileset_godot/tileset_mk_16_16_nature_tileset_godot.png"
-dest_files=["res://.godot/imported/tileset_mk_16_16_nature_tileset_godot.png-48f2ee27cdc6695340cd6024c1ec5a21.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Ideia_Cavaleiro1.png"
+dest_files=["res://.godot/imported/Ideia_Cavaleiro1.png-5eb1c166059801cfe8efc874d74fdeba.ctex"]
 
 [params]
 
