@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3h141sjmfnum"
-path="res://.godot/imported/Layer_0001_8.png-8aa9568f8d6b8157bc0173044568c8e0.ctex"
+path="res://.godot/imported/Layer_0001_8.png-3d182d2b20554b6f6a3452171d04110c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cenario/background layers/Layer_0001_8.png"
-dest_files=["res://.godot/imported/Layer_0001_8.png-8aa9568f8d6b8157bc0173044568c8e0.ctex"]
+source_file="res://Assets/Cenario/background layers/Layer_0001_8.png"
+dest_files=["res://.godot/imported/Layer_0001_8.png-3d182d2b20554b6f6a3452171d04110c.ctex"]
 
 [params]
 

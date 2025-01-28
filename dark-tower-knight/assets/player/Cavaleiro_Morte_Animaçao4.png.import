@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyrn8av5hk22f"
-path="res://.godot/imported/Cavaleiro_Morte_Animaçao4.png-1cf9a95cb367560620dbbd06356030c5.ctex"
+path="res://.godot/imported/Cavaleiro_Morte_Animaçao4.png-1aba0c194a9b95d41383dc3458f50c64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Cavaleiro_Morte_Animaçao4.png"
-dest_files=["res://.godot/imported/Cavaleiro_Morte_Animaçao4.png-1cf9a95cb367560620dbbd06356030c5.ctex"]
+source_file="res://Assets/player/Cavaleiro_Morte_Animaçao4.png"
+dest_files=["res://.godot/imported/Cavaleiro_Morte_Animaçao4.png-1aba0c194a9b95d41383dc3458f50c64.ctex"]
 
 [params]
 

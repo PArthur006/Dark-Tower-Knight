@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfge7rn8jmkvu"
-path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"
+path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a08f6376f6888e36b8d9758c7edae8ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Ideia_Cavaleiro_Correndo3.png"
-dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"]
+source_file="res://Assets/player/Ideia_Cavaleiro_Correndo3.png"
+dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a08f6376f6888e36b8d9758c7edae8ff.ctex"]
 
 [params]
 
