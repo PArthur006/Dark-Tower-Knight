@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://wfx1ps7wk0so"]
+
+[ext_resource type="Script" path="res://scripts/moving_platform.gd" id="1_fnyw2"]
+[ext_resource type="Texture2D" uid="uid://xxhnfv8eu8o4" path="res://assets/cenario/plataformas/Blocks (16 x 16).png" id="1_lf5l4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpg1k"]
+size = Vector2(32, 16)
+
+[node name="moving_platform" type="Node2D"]
+script = ExtResource("1_fnyw2")
+
+[node name="platfom" type="AnimatableBody2D" parent="."]
+collision_layer = 3
+
+[node name="sprite_platform" type="Sprite2D" parent="platfom"]
+texture = ExtResource("1_lf5l4")
+region_enabled = true
+region_rect = Rect2(96, 64, 32, 16)
+
+[node name="colision" type="CollisionShape2D" parent="platfom"]
+shape = SubResource("RectangleShape2D_tpg1k")
+one_way_collision = true
