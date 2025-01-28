@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy2rgmuigq15j"
-path="res://.godot/imported/inimigo_sombra.png-bf5cf21d3f4a1f867f422ba8cad7b17e.ctex"
+path="res://.godot/imported/inimigo_sombra.png-3b203e093fff6694888d42b54fa5b3d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/INIMIGO SOMBRA/inimigo_sombra.png"
-dest_files=["res://.godot/imported/inimigo_sombra.png-bf5cf21d3f4a1f867f422ba8cad7b17e.ctex"]
+source_file="res://Assets/mobs/INIMIGO SOMBRA/inimigo_sombra.png"
+dest_files=["res://.godot/imported/inimigo_sombra.png-3b203e093fff6694888d42b54fa5b3d1.ctex"]
 
 [params]
 
