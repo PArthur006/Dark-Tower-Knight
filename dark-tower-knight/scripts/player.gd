@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 150.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 125.0
+const JUMP_VELOCITY = -300.0 #Pulo alterado de -400 para -300. Motivo: Pulo exagerado.
 
 @onready var animacao := $animacao as AnimatedSprite2D
 var jumping := false
