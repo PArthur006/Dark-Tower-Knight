@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkx4pijruvlbf"
-path="res://.godot/imported/Esqueleto spritesheet completo.png-33563e17d8c9f835ecf73bbff8c0c71e.ctex"
+path="res://.godot/imported/Esqueleto spritesheet completo.png-d8264f42773afd0efaf0040a0ac2d735.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/mobs/ESQUELETO/Esqueleto spritesheet completo.png"
-dest_files=["res://.godot/imported/Esqueleto spritesheet completo.png-33563e17d8c9f835ecf73bbff8c0c71e.ctex"]
+source_file="res://assets/mobs/ESQUELETO/Esqueleto spritesheet completo.png"
+dest_files=["res://.godot/imported/Esqueleto spritesheet completo.png-d8264f42773afd0efaf0040a0ac2d735.ctex"]
 
 [params]
 

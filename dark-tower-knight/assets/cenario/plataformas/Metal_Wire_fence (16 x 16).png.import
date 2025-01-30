@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfge7rn8jmkvu"
-path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"
+uid="uid://bih3kbdwueg6c"
+path="res://.godot/imported/Metal_Wire_fence (16 x 16).png-3fe8f9fa96d9986610cf3d402b6bcfb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Ideia_Cavaleiro_Correndo3.png"
-dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"]
+source_file="res://assets/cenario/plataformas/Metal_Wire_fence (16 x 16).png"
+dest_files=["res://.godot/imported/Metal_Wire_fence (16 x 16).png-3fe8f9fa96d9986610cf3d402b6bcfb3.ctex"]
 
 [params]
 

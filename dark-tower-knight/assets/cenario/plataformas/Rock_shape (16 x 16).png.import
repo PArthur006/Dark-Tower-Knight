@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfge7rn8jmkvu"
-path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"
+uid="uid://de8arwccnkxil"
+path="res://.godot/imported/Rock_shape (16 x 16).png-4db975ac7ee1676a0623f909e2f8c152.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Ideia_Cavaleiro_Correndo3.png"
-dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"]
+source_file="res://assets/cenario/plataformas/Rock_shape (16 x 16).png"
+dest_files=["res://.godot/imported/Rock_shape (16 x 16).png-4db975ac7ee1676a0623f909e2f8c152.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfge7rn8jmkvu"
-path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"
+uid="uid://do41qb50up3lx"
+path="res://.godot/imported/Brown_Tile_Terrain (16 x 16).png-7563fadc9d2861bf0ed8b36d3f93192c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Ideia_Cavaleiro_Correndo3.png"
-dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"]
+source_file="res://assets/cenario/plataformas/Cave Tileset/Brown_Tile_Terrain (16 x 16).png"
+dest_files=["res://.godot/imported/Brown_Tile_Terrain (16 x 16).png-7563fadc9d2861bf0ed8b36d3f93192c.ctex"]
 
 [params]
 
