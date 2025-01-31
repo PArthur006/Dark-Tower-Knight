@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfge7rn8jmkvu"
-path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"
+uid="uid://b1l5jtxwvm103"
+path="res://.godot/imported/Water_frames (16 x 32).png-9c5a521e3e91f9269e772ef40b410451.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Ideia_Cavaleiro_Correndo3.png"
-dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"]
+source_file="res://assets/cenario/plataformas/Water_frames (16 x 32).png"
+dest_files=["res://.godot/imported/Water_frames (16 x 32).png-9c5a521e3e91f9269e772ef40b410451.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfge7rn8jmkvu"
-path="res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"
+uid="uid://2jr2nqvr386o"
+path="res://.godot/imported/props2.png-cea8baf13c601f8f42d52ad6ca0d4096.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Ideia_Cavaleiro_Correndo3.png"
-dest_files=["res://.godot/imported/Ideia_Cavaleiro_Correndo3.png-a53331697d88ee7704d191e04a2a84ba.ctex"]
+source_file="res://assets/cenario/plataformas/PixelFantasy_Caves/props2.png"
+dest_files=["res://.godot/imported/props2.png-cea8baf13c601f8f42d52ad6ca0d4096.ctex"]
 
 [params]
 
