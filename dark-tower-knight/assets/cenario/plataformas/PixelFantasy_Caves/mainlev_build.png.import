@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcp3e3c31cm13"
-path="res://.godot/imported/Rock_shape (16 x 16).png-4db975ac7ee1676a0623f909e2f8c152.ctex"
+uid="uid://5bepta8ny1f0"
+path="res://.godot/imported/mainlev_build.png-0125e5a7c9a94ce7b3689ee92a0d038d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cenario/plataformas/Rock_shape (16 x 16).png"
-dest_files=["res://.godot/imported/Rock_shape (16 x 16).png-4db975ac7ee1676a0623f909e2f8c152.ctex"]
+source_file="res://assets/cenario/plataformas/PixelFantasy_Caves/mainlev_build.png"
+dest_files=["res://.godot/imported/mainlev_build.png-0125e5a7c9a94ce7b3689ee92a0d038d.ctex"]
 
 [params]
 
