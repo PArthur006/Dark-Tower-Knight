@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cttugesomahtg"]
+
+[ext_resource type="Script" path="res://scripts/key_manager.gd" id="1_oycxp"]
+
+[node name="KeyManager" type="Node" groups=["Player"]]
+script = ExtResource("1_oycxp")

@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Dark Knight"
-run/main_scene="res://fase_1.tscn"
+run/main_scene="res://Scenes/fase_1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+KeyManager="*res://Scenes/key_manager.tscn"
 
 [display]
 
@@ -21,6 +25,10 @@ window/size/viewport_width=640
 window/size/viewport_height=320
 window/stretch/mode="viewport"
 window/stretch/scale=2.0
+
+[global_group]
+
+Player=""
 
 [layer_names]
 

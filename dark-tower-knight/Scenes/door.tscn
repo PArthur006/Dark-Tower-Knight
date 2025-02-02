@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://r4m6rh7cd84q"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_bdbyy"]
+[ext_resource type="Texture2D" uid="uid://bveoanm5ivjc4" path="res://assets/cenario/IMG_5534.PNG" id="2_7dsw3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28sjd"]
+size = Vector2(38.4132, 56.9213)
+
+[node name="Door" type="StaticBody2D"]
+script = ExtResource("1_bdbyy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 3.57955)
+scale = Vector2(1.01528, -1.104)
+shape = SubResource("RectangleShape2D_28sjd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 3)
+scale = Vector2(0.0631268, 0.114405)
+texture = ExtResource("2_7dsw3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.5, 5.125)
+scale = Vector2(1.28482, 1.29215)
+shape = SubResource("RectangleShape2D_28sjd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -27.0
+offset_top = -43.0
+offset_right = 13.0
+offset_bottom = -3.0
+scale = Vector2(1.40578, 0.250569)
+color = Color(0.0278936, 0.0443912, 0.0239635, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 1.4227
+offset_top = 1.52241e-05
+offset_right = 162.423
+offset_bottom = 23.0
+scale = Vector2(0.238975, 1.63958)
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/font_size = 16
+text = "you need the key..."
+horizontal_alignment = 1
+uppercase = true
