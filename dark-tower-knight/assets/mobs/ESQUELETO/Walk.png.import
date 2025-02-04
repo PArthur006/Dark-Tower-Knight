@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b53q4dyu85n57"
-path="res://.godot/imported/hit.png-6e0778381dd0e6d2218f6869be8bf8e9.ctex"
+uid="uid://bnwdvjh3ha8su"
+path="res://.godot/imported/Walk.png-7760b2bf9a1b997884dc54cba80ae684.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/Zumbi/hit.png"
-dest_files=["res://.godot/imported/hit.png-6e0778381dd0e6d2218f6869be8bf8e9.ctex"]
+source_file="res://assets/mobs/ESQUELETO/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-7760b2bf9a1b997884dc54cba80ae684.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b53q4dyu85n57"
-path="res://.godot/imported/hit.png-6e0778381dd0e6d2218f6869be8bf8e9.ctex"
+uid="uid://dg7ed1j0qeups"
+path="res://.godot/imported/Damage.png-c0fa676fcb13d323a3dba5dce72f23ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/Zumbi/hit.png"
-dest_files=["res://.godot/imported/hit.png-6e0778381dd0e6d2218f6869be8bf8e9.ctex"]
+source_file="res://assets/mobs/ESQUELETO/Damage.png"
+dest_files=["res://.godot/imported/Damage.png-c0fa676fcb13d323a3dba5dce72f23ee.ctex"]
 
 [params]
 
