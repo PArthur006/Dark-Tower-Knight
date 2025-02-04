@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://pf36modvjnh3"]
+
+[ext_resource type="Script" path="res://scripts/falling_platform.gd" id="1_opt3x"]
+[ext_resource type="Texture2D" uid="uid://0h235u5uokdb" path="res://assets/cenario/plataformas/Cave Tileset/Gray_Tile_Terrain (16 x 16).png" id="2_qnwpv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsv2l"]
+size = Vector2(16, 16)
+
+[sub_resource type="Animation" id="Animation_fb74i"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hb4lt"]
+resource_name = "Shake"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1.5, 0), Vector2(0, 0), Vector2(-1.5, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v3v6o"]
+_data = {
+"RESET": SubResource("Animation_fb74i"),
+"Shake": SubResource("Animation_hb4lt")
+}
+
+[node name="Falling-Platform" type="AnimatableBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_opt3x")
+
+[node name="Texture" type="Sprite2D" parent="."]
+texture = ExtResource("2_qnwpv")
+region_enabled = true
+region_rect = Rect2(224, 176, 16, 16)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jsv2l")
+one_way_collision = true
+
+[node name="Respawn" type="Timer" parent="."]
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v3v6o")
+}
+
+[connection signal="animation_finished" from="Animation" to="." method="_on_animation_animation_finished"]
