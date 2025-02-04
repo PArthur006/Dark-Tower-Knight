@@ -18,9 +18,12 @@ func _physics_process(delta: float) -> void:
 	elif is_on_floor():
 		jumping = false
 		
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	for platforms in get_slide_collision_count():
+		var collision = get_slide_collision(platforms)
+		if collision.get_collider().has_method("has_collider_with"):
+			collision.get_collider().has_collider_with(collision, self)
+	
+	
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
