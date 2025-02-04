@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cga3ycxcm4re1"
-path="res://.godot/imported/walk.png-07b885f5db10558c58adaae9855ed569.ctex"
+path="res://.godot/imported/walk.png-4660d2a41ebb6e40718acddccd11b755.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Zumbi/walk.png"
-dest_files=["res://.godot/imported/walk.png-07b885f5db10558c58adaae9855ed569.ctex"]
+source_file="res://assets/mobs/Zumbi/walk.png"
+dest_files=["res://.godot/imported/walk.png-4660d2a41ebb6e40718acddccd11b755.ctex"]
 
 [params]
 
