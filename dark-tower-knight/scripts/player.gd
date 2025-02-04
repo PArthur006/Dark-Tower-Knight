@@ -18,11 +18,6 @@ func _physics_process(delta: float) -> void:
 	elif is_on_floor():
 		jumping = false
 		
-	for platforms in get_slide_collision_count():
-		var collision = get_slide_collision(platforms)
-		if collision.get_collider().has_method("has_collider_with"):
-			collision.get_collider().has_collider_with(collision, self)
-	
 	
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
@@ -39,3 +34,8 @@ func _physics_process(delta: float) -> void:
 		animacao.play("idle")
 
 	move_and_slide()
+	
+	for platforms in get_slide_collision_count():
+		var collision = get_slide_collision(platforms)
+		if collision.get_collider().has_method("has_collided_with"):
+			collision.get_collider().has_collided_with(collision, self)
