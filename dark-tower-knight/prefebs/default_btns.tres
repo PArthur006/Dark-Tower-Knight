@@ -1,0 +1,48 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b4q31cdpepgrh"]
+
+[ext_resource type="FontFile" uid="uid://cnw2yobbfckky" path="res://assets/screens/Seagram tfb.ttf" id="1_74mta"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xmckt"]
+bg_color = Color(0.6, 0.6, 0.6, 0.133333)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.725718, 0.735474, 0.735466, 0.729412)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0p1u"]
+bg_color = Color(0, 0, 0, 0.298039)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.725718, 0.735474, 0.735466, 0.729412)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2yjx3"]
+bg_color = Color(0.0941176, 0.0980392, 0.0980392, 0.247059)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.0430392, 0.0430392, 0.0430392, 0.556863)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tgrb7"]
+bg_color = Color(0, 0, 0, 0.298039)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0.298039)
+border_blend = true
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 25
+Button/fonts/font = ExtResource("1_74mta")
+Button/styles/focus = SubResource("StyleBoxFlat_xmckt")
+Button/styles/hover = SubResource("StyleBoxFlat_m0p1u")
+Button/styles/normal = SubResource("StyleBoxFlat_2yjx3")
+Button/styles/pressed = SubResource("StyleBoxFlat_tgrb7")
