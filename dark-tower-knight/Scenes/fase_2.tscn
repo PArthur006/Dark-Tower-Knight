@@ -2621,6 +2621,7 @@ texture = ExtResource("5_cp2ig")
 2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:5/0 = 0
 4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0/physics_layer_0/polygon_0/one_way = true
 6:5/0 = 0
 7:5/0 = 0
 9:5/0 = 0
@@ -14046,9 +14047,9 @@ distance = -90
 move_horizontal = false
 
 [node name="moving_plataform6" parent="Plataformas" instance=ExtResource("12_b7hgy")]
-position = Vector2(2861, 124)
+position = Vector2(2849, 125)
 move_speed = 8.0
-distance = 198
+distance = 200
 
 [node name="moving_plataform7" parent="Plataformas" instance=ExtResource("12_b7hgy")]
 position = Vector2(3163, 181)
