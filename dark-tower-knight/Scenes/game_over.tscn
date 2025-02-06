@@ -1,0 +1,167 @@
+[gd_scene load_steps=8 format=3 uid="uid://cq6syr7v8ikt6"]
+
+[ext_resource type="Texture2D" uid="uid://s5k1scwndhqv" path="res://assets/screens/GameOver.jpg" id="1_1oewp"]
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_fl2be"]
+[ext_resource type="Texture2D" uid="uid://dlvosm8pa2bfy" path="res://assets/screens/GameOver_Logo.png" id="2_d1dqu"]
+[ext_resource type="Theme" uid="uid://b4q31cdpepgrh" path="res://prefebs/default_btns.tres" id="3_4o2wc"]
+
+[sub_resource type="Animation" id="Animation_wav20"]
+resource_name = "fase_in"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameOver_Logo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.23333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Bg:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_s2sbw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GameOver_Logo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Bg:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b8r1v"]
+_data = {
+"RESET": SubResource("Animation_s2sbw"),
+"fase_in": SubResource("Animation_wav20")
+}
+
+[node name="Game_Over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fl2be")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -10
+layout_mode = 0
+offset_left = -18.0
+offset_top = -19.0
+offset_right = 22.0
+offset_bottom = 21.0
+scale = Vector2(17.2478, 9.14756)
+color = Color(0, 0, 0, 1)
+
+[node name="Bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1oewp")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="GameOver_Logo" type="TextureRect" parent="."]
+layout_mode = 1
+offset_left = 243.0
+offset_top = 12.0
+offset_right = 1523.0
+offset_bottom = 1292.0
+scale = Vector2(0.113573, 0.116709)
+texture = ExtResource("2_d1dqu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -2.0
+offset_right = 99.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Restart_btn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_4o2wc")
+text = "Jogar Novamente"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="Quit_btn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_4o2wc")
+text = "Sair do Jogo"
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b8r1v")
+}
+autoplay = "fase_in"
+
+[connection signal="pressed" from="VBoxContainer/Restart_btn" to="." method="_on_restart_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit_btn" to="." method="_on_quit_btn_pressed"]
