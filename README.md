@@ -1,6 +1,6 @@
-# 🏰 **Dark Tower Knight**  
+# 🏰 **Sunflower Knight**  
 
-**Dark Tower Knight** é um jogo 2D em desenvolvimento, criado como parte da disciplina **Desenvolvimento de Software** da **UnB-FCTE**. Inspirado por uma narrativa rica e mecânicas envolventes, o jogo transporta os jogadores para o mundo de **Amarelo Girassol**, um feudo ameaçado por forças das trevas.  
+**Sunflower Knight** é um jogo 2D em desenvolvimento, criado como parte da disciplina **Desenvolvimento de Software** da **UnB-FCTE**. Inspirado por uma narrativa rica e mecânicas envolventes, o jogo transporta os jogadores para o mundo de **Amarelo Girassol**, um feudo ameaçado por forças das trevas.  
 
 ---
 
@@ -14,7 +14,7 @@ No entanto, um antigo inimigo, **Rei Thalion**, ameaça destruir a paz do feudo.
 
 ## 🎮 **Sobre o Jogo**  
 
-Em **Dark Tower Knight**, o jogador assume o papel de um cavaleiro do Feudo **Amarelo Girassol**. Sua missão é enfrentar desafios, proteger o reino e resgatar a princesa Lysandra das garras do Rei Thalion.  
+Em **Sunflower Knight**, o jogador assume o papel de um cavaleiro do Feudo **Amarelo Girassol**. Sua missão é enfrentar desafios, proteger o reino e resgatar a princesa Lysandra das garras do Rei Thalion.  
 
 - **Plataforma de Desenvolvimento**: [Godot Engine](https://godotengine.org/)  
 - **Gênero**: Aventura 2D para um jogador, com combate estratégico e narrativa envolvente.  
@@ -45,7 +45,7 @@ O projeto está sendo desenvolvido pelo **Feudo Amarelo Girassol**, uma equipe e
 
 ## 🌱 **Contribuições e Feedback**  
 
-Estamos abertos a sugestões e contribuições para tornar **Dark Tower Knight** ainda melhor. Para feedback ou relatórios de bugs, abra uma [issue](https://github.com/PArthur006/Dark-Tower-Knight/issues).  
+Estamos abertos a sugestões e contribuições para tornar **Sunflower Knight** ainda melhor. Para feedback ou relatórios de bugs, abra uma [issue](https://github.com/PArthur006/Dark-Tower-Knight/issues).  
 
 ---
 
