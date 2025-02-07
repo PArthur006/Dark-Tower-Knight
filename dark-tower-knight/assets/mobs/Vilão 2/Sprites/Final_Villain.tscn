@@ -1,0 +1,246 @@
+[gd_scene load_steps=26 format=3 uid="uid://c1cw5nby05wm7"]
+
+[ext_resource type="Script" path="res://final_villain.gd" id="1_4phcs"]
+[ext_resource type="Texture2D" uid="uid://xrhlu2q7cdqh" path="res://Vilão 2/Vilao_2_animaçoes_.png" id="2_303gr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vp0q"]
+size = Vector2(22, 31)
+
+[sub_resource type="Animation" id="Animation_h58ee"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("collision:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_j86pl"]
+resource_name = "Shadow_Ball_Attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_ks5uk"]
+resource_name = "Take_Hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_in45g"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_g7vqx"]
+resource_name = "moving"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_it6af"]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [11, 12, 13, 14, 15]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("collision:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.866667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ecwc1"]
+_data = {
+"RESET": SubResource("Animation_h58ee"),
+"Shadow_Ball_Attack": SubResource("Animation_j86pl"),
+"Take_Hit": SubResource("Animation_ks5uk"),
+"death": SubResource("Animation_it6af"),
+"idle": SubResource("Animation_in45g"),
+"moving": SubResource("Animation_g7vqx")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_setke"]
+animation = &"Shadow_Ball_Attack"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_r42xo"]
+animation = &"Take_Hit"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vpbme"]
+animation = &"death"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_d68ih"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wf12r"]
+animation = &"moving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c3am1"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yjyj4"]
+advance_mode = 2
+advance_condition = &"can_move"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gqw3h"]
+advance_mode = 2
+advance_condition = &"time_attack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ytkcy"]
+advance_mode = 2
+advance_condition = &"can_move"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3tvfn"]
+advance_mode = 2
+advance_condition = &"take_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_afybh"]
+advance_mode = 2
+advance_condition = &"take_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5mxwd"]
+advance_mode = 2
+advance_condition = &"can_move"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_6ilvc"]
+states/Shadow_Ball_Attack/node = SubResource("AnimationNodeAnimation_setke")
+states/Shadow_Ball_Attack/position = Vector2(384, 217)
+states/Take_Hit/node = SubResource("AnimationNodeAnimation_r42xo")
+states/Take_Hit/position = Vector2(708, 100)
+states/death/node = SubResource("AnimationNodeAnimation_vpbme")
+states/death/position = Vector2(785, 194)
+states/idle/node = SubResource("AnimationNodeAnimation_d68ih")
+states/idle/position = Vector2(289, 100)
+states/moving/node = SubResource("AnimationNodeAnimation_wf12r")
+states/moving/position = Vector2(436, 100)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_c3am1"), "idle", "moving", SubResource("AnimationNodeStateMachineTransition_yjyj4"), "moving", "Shadow_Ball_Attack", SubResource("AnimationNodeStateMachineTransition_gqw3h"), "Shadow_Ball_Attack", "moving", SubResource("AnimationNodeStateMachineTransition_ytkcy"), "moving", "Take_Hit", SubResource("AnimationNodeStateMachineTransition_3tvfn"), "Shadow_Ball_Attack", "Take_Hit", SubResource("AnimationNodeStateMachineTransition_afybh"), "Take_Hit", "moving", SubResource("AnimationNodeStateMachineTransition_5mxwd")]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1e7jy"]
+size = Vector2(21, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1lu4"]
+size = Vector2(112, 27)
+
+[node name="Vilão_Final" type="CharacterBody2D"]
+collision_mask = 3
+script = ExtResource("1_4phcs")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0.5)
+shape = SubResource("RectangleShape2D_8vp0q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_303gr")
+hframes = 16
+
+[node name="Shadow_point" type="Marker2D" parent="Sprite2D"]
+unique_name_in_owner = true
+position = Vector2(0, 3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ecwc1")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_6ilvc")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/can_move = false
+parameters/conditions/take_hit = false
+parameters/conditions/time_attack = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.5
+
+[node name="wall_detector" type="RayCast2D" parent="."]
+position = Vector2(1, 0)
+target_position = Vector2(-16, 0)
+
+[node name="hurt_box" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurt_box"]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_1e7jy")
+
+[node name="player_detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_detector"]
+position = Vector2(1, 3.5)
+shape = SubResource("RectangleShape2D_n1lu4")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(1, 4)
+
+[connection signal="body_entered" from="hurt_box" to="." method="_on_hurt_box_body_entered"]
