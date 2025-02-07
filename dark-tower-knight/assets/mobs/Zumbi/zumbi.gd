@@ -12,8 +12,8 @@ var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var hitbox := $Hitbox as Area2D
 @onready var hurtbox := $Hurtbox as Area2D
 
-var health = 50
-var damage = 10
+var health = 30
+var damage = 15
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
