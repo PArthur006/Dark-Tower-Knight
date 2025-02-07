@@ -33,7 +33,6 @@ func _physics_process(delta: float) -> void:
 
 func take_damage(amount:int):
 	health -= amount
-	anim.play("Hit")
 	if health <= 0:
 		die()
 
