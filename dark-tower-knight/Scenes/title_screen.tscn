@@ -151,6 +151,7 @@ script = ExtResource("1_7tdm3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -10
+layout_mode = 0
 offset_left = -18.0
 offset_top = -19.0
 offset_right = 22.0

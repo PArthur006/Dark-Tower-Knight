@@ -1,8 +1,9 @@
-[gd_scene load_steps=47 format=4 uid="uid://je5kgo8v5s2l"]
+[gd_scene load_steps=48 format=4 uid="uid://je5kgo8v5s2l"]
 
 [ext_resource type="Texture2D" uid="uid://bhv765wupbkhc" path="res://assets/cenario/plataformas/Blocks (16 x 16).png" id="1_j70j0"]
 [ext_resource type="PackedScene" uid="uid://b4m3xtk0bj3oy" path="res://prefebs/falling_platform.tscn" id="1_rxqsk"]
 [ext_resource type="Texture2D" uid="uid://b1yc0komeilkv" path="res://assets/cenario/tileset_mk_16_16_nature_tileset_godot.png" id="2_etigw"]
+[ext_resource type="PackedScene" uid="uid://bfyxsxgdvxby" path="res://Scenes/limite.tscn" id="2_uy4un"]
 [ext_resource type="Texture2D" uid="uid://2jr2nqvr386o" path="res://assets/cenario/plataformas/PixelFantasy_Caves/props2.png" id="3_qd5qp"]
 [ext_resource type="Texture2D" uid="uid://0h235u5uokdb" path="res://assets/cenario/plataformas/Cave Tileset/Gray_Tile_Terrain (16 x 16).png" id="4_bjxbp"]
 [ext_resource type="Texture2D" uid="uid://bnjub175wpo6v" path="res://assets/cenario/plataformas/Cave Tileset/Scaffolding_and_BG_Parts (16 x 16).png" id="5_cp2ig"]
@@ -13973,7 +13974,7 @@ sources/7 = SubResource("TileSetAtlasSource_nbtyn")
 [node name="Fase_2" type="Node2D"]
 script = SubResource("GDScript_80mvv")
 
-[node name="player" parent="." instance=ExtResource("13_jd7ik")]
+[node name="player" parent="." groups=["Player"] instance=ExtResource("13_jd7ik")]
 z_index = 10
 position = Vector2(35, 188)
 collision_mask = 3
@@ -14103,3 +14104,15 @@ position = Vector2(2720, -251)
 scale = Vector2(2.93291, 0.998403)
 texture = ExtResource("14_eckoq")
 centered = false
+
+[node name="Node" type="Node" parent="."]
+
+[node name="limite_lava1" parent="Node" instance=ExtResource("2_uy4un")]
+position = Vector2(-659, -107)
+
+[node name="limite_lava2" parent="Node" instance=ExtResource("2_uy4un")]
+position = Vector2(1427, -104)
+
+[node name="Limite_Final" parent="Node" instance=ExtResource("2_uy4un")]
+position = Vector2(4901, -1476)
+rotation = 1.57079
