@@ -1,13 +1,61 @@
-[gd_scene load_steps=18 format=3 uid="uid://bllecdcmgt3lp"]
+[gd_scene load_steps=36 format=3 uid="uid://bllecdcmgt3lp"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ijdgq"]
 [ext_resource type="Texture2D" uid="uid://rcj0naq67pga" path="res://assets/player/Ideia_Cavaleiro1.png" id="2_0iv4p"]
+[ext_resource type="Texture2D" uid="uid://b1m2ge32msces" path="res://assets/player/player/Cavaleiro_ataque_Animaçao-Sheet.png" id="2_f3bwh"]
+[ext_resource type="Texture2D" uid="uid://da0emdec2a8d7" path="res://assets/player/player/morte.png" id="3_23tex"]
 [ext_resource type="Texture2D" uid="uid://cbtndqp4vqw3q" path="res://assets/player/Ideia_Cavaleiro2.png" id="3_pp34m"]
 [ext_resource type="Texture2D" uid="uid://c3fqmjtq6g7bn" path="res://assets/player/Ideia_Cavaleiro3.png" id="4_5wkbf"]
+[ext_resource type="Texture2D" uid="uid://df2qmtppryscg" path="res://assets/player/player/hit.png" id="4_ss4vl"]
 [ext_resource type="Texture2D" uid="uid://c6n1qtabmj7er" path="res://assets/player/Ideia_Cavaleiro4.png" id="5_ho4yo"]
 [ext_resource type="Texture2D" uid="uid://dm5otmv6hg37e" path="res://assets/player/Ideia_Cavaleiro_Correndo1.png" id="6_qyipc"]
 [ext_resource type="Texture2D" uid="uid://ct0h5vf2yq8a" path="res://assets/player/Ideia_Cavaleiro_Correndo2.png" id="7_24ilj"]
 [ext_resource type="Texture2D" uid="uid://bfge7rn8jmkvu" path="res://assets/player/Ideia_Cavaleiro_Correndo3.png" id="8_v7mie"]
+[ext_resource type="Texture2D" uid="uid://ewpmq0sbko7i" path="res://assets/player/player/animação_pulo_cavaleiro.png" id="9_o5dsw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45bnh"]
+atlas = ExtResource("2_f3bwh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmjup"]
+atlas = ExtResource("2_f3bwh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xk0q"]
+atlas = ExtResource("2_f3bwh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cuw78"]
+atlas = ExtResource("3_23tex")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbqyk"]
+atlas = ExtResource("3_23tex")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6cq7"]
+atlas = ExtResource("3_23tex")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3jlv"]
+atlas = ExtResource("3_23tex")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2blm"]
+atlas = ExtResource("4_ss4vl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ge3c5"]
+atlas = ExtResource("4_ss4vl")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm5cd"]
+atlas = ExtResource("4_ss4vl")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xp2i"]
+atlas = ExtResource("4_ss4vl")
+region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jr3na"]
 atlas = ExtResource("2_0iv4p")
@@ -25,6 +73,10 @@ region = Rect2(0, 0, 18, 32)
 atlas = ExtResource("5_ho4yo")
 region = Rect2(0, 0, 18, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_f530p"]
+atlas = ExtResource("9_o5dsw")
+region = Rect2(96, 0, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_pt1wm"]
 atlas = ExtResource("6_qyipc")
 region = Rect2(0, 0, 32, 32)
@@ -39,9 +91,52 @@ region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jlcxd"]
 animations = [{
-"frames": [],
-"loop": true,
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45bnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmjup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xk0q")
+}],
+"loop": false,
+"name": &"atack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cuw78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbqyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6cq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3jlv")
+}],
+"loop": false,
 "name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2blm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ge3c5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rm5cd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xp2i")
+}],
+"loop": false,
+"name": &"hit",
 "speed": 5.0
 }, {
 "frames": [{
@@ -61,8 +156,11 @@ animations = [{
 "name": &"idle",
 "speed": 5.0
 }, {
-"frames": [],
-"loop": true,
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f530p")
+}],
+"loop": false,
 "name": &"jump",
 "speed": 5.0
 }, {
@@ -85,7 +183,13 @@ animations = [{
 radius = 6.0
 height = 20.0
 
-[node name="player" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qoufm"]
+size = Vector2(10.5, 19)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vajah"]
+size = Vector2(14, 22)
+
+[node name="player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_ijdgq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -98,14 +202,28 @@ drag_left_margin = 0.47
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-
 [node name="animacao" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jlcxd")
-animation = &"idle"
+animation = &"atack"
 autoplay = "idle"
 
 [node name="colisao" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2(0, 5)
 shape = SubResource("CapsuleShape2D_iur61")
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="collsion" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(11, 1.5)
+shape = SubResource("RectangleShape2D_qoufm")
+debug_color = Color(0.975452, 0, 0.419295, 0.42)
+
+[node name="hurtbox" type="Area2D" parent="."]
+
+[node name="collision" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_vajah")
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]
