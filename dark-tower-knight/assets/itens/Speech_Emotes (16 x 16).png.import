@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c46l0u0vbo3qx"
-path="res://.godot/imported/Esqueleto genérico completo.png-aba7a060e0a799d21023d67eb5a5ca78.ctex"
+uid="uid://x6nkj1ucobtj"
+path="res://.godot/imported/Speech_Emotes (16 x 16).png-b25d8b4ab8899eebb3ca10071df57d1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/ESQUELETO/Esqueleto genérico completo.png"
-dest_files=["res://.godot/imported/Esqueleto genérico completo.png-aba7a060e0a799d21023d67eb5a5ca78.ctex"]
+source_file="res://assets/itens/Speech_Emotes (16 x 16).png"
+dest_files=["res://.godot/imported/Speech_Emotes (16 x 16).png-b25d8b4ab8899eebb3ca10071df57d1d.ctex"]
 
 [params]
 

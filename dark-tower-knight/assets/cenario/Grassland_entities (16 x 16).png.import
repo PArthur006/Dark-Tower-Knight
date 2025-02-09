@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c46l0u0vbo3qx"
-path="res://.godot/imported/Esqueleto genérico completo.png-aba7a060e0a799d21023d67eb5a5ca78.ctex"
+uid="uid://bvu8uxvy2heyb"
+path="res://.godot/imported/Grassland_entities (16 x 16).png-8d6a0ccfe518ba0dbffe95eb24e56544.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/ESQUELETO/Esqueleto genérico completo.png"
-dest_files=["res://.godot/imported/Esqueleto genérico completo.png-aba7a060e0a799d21023d67eb5a5ca78.ctex"]
+source_file="res://assets/cenario/Grassland_entities (16 x 16).png"
+dest_files=["res://.godot/imported/Grassland_entities (16 x 16).png-8d6a0ccfe518ba0dbffe95eb24e56544.ctex"]
 
 [params]
 

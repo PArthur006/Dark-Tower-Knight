@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c46l0u0vbo3qx"
-path="res://.godot/imported/Esqueleto genérico completo.png-aba7a060e0a799d21023d67eb5a5ca78.ctex"
+uid="uid://c7fys2qfv23ow"
+path="res://.godot/imported/Dialog_Box(16 x 16).png-0e13ade21b3b241dd23a48181acebb95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/ESQUELETO/Esqueleto genérico completo.png"
-dest_files=["res://.godot/imported/Esqueleto genérico completo.png-aba7a060e0a799d21023d67eb5a5ca78.ctex"]
+source_file="res://assets/cenario/Dialog_Box(16 x 16).png"
+dest_files=["res://.godot/imported/Dialog_Box(16 x 16).png-0e13ade21b3b241dd23a48181acebb95.ctex"]
 
 [params]
 
