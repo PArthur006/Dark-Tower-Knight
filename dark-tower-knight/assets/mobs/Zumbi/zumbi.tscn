@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://etgm2uqugcb3"]
 
-[ext_resource type="Script" path="res://zumbi.gd" id="1_3hkk0"]
-[ext_resource type="Texture2D" uid="uid://mlqod2xjean6" path="res://Zumbi/Zumbi spritesheet.png" id="2_qo2tu"]
+[ext_resource type="Script" path="res://assets/mobs/Zumbi/zumbi.gd" id="1_3hkk0"]
+[ext_resource type="Texture2D" uid="uid://mlqod2xjean6" path="res://assets/mobs/Zumbi/Zumbi spritesheet.png" id="2_qo2tu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ka5r2"]
 atlas = ExtResource("2_qo2tu")
@@ -225,10 +225,9 @@ script = ExtResource("1_3hkk0")
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_yoiqs")
-animation = &"Attack"
+animation = &"Death"
 autoplay = "Walk"
-frame = 10
-frame_progress = 0.999352
+frame_progress = 0.3552
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2
