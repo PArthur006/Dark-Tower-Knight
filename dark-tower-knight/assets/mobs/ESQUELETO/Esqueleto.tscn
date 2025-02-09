@@ -1,7 +1,7 @@
 [gd_scene load_steps=32 format=3 uid="uid://bvmmin31ks5k7"]
 
 [ext_resource type="Script" path="res://assets/mobs/ESQUELETO/Esqueleto.gd" id="1_lrl5f"]
-[ext_resource type="Texture2D" uid="uid://dmeq1s2ru8hjl" path="res://assets/mobs/ESQUELETO/Esqueleto genérico completo.png" id="2_sdc3g"]
+[ext_resource type="Texture2D" uid="uid://c46l0u0vbo3qx" path="res://assets/mobs/ESQUELETO/Esqueleto genérico completo.png" id="2_sdc3g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0oi0n"]
 atlas = ExtResource("2_sdc3g")
@@ -207,7 +207,7 @@ size = Vector2(9, 18)
 [sub_resource type="GDScript" id="GDScript_lcdhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2mkxi"]
-size = Vector2(15.875, 20.25)
+size = Vector2(17, 19.25)
 
 [node name="Esqueleto" type="CharacterBody2D" groups=["Inimigo"]]
 collision_layer = 4
@@ -216,8 +216,10 @@ script = ExtResource("1_lrl5f")
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_urp8c")
-animation = &"Death"
+animation = &"Walk"
 autoplay = "Walk"
+frame = 1
+frame_progress = 0.623851
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -243,7 +245,7 @@ collision_layer = 544
 collision_mask = 33
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2(-4.0625, -0.875)
+position = Vector2(-2.5, -0.375)
 shape = SubResource("RectangleShape2D_2mkxi")
 debug_color = Color(0.975656, 0.0519199, 0.377158, 0.42)
 
