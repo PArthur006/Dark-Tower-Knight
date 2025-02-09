@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkt8nm6to7pmb"
-path="res://.godot/imported/attack_animation_1-Recovered-Sheet.png-e62ce2acfe76dc4e2018d9ef7b3d8bf9.ctex"
+path="res://.godot/imported/attack_animation_1-Recovered-Sheet.png-6f4f89c3650b0c4796fa09bbbdcc3d8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Vilão 2/attack_animation_1-Recovered-Sheet.png"
-dest_files=["res://.godot/imported/attack_animation_1-Recovered-Sheet.png-e62ce2acfe76dc4e2018d9ef7b3d8bf9.ctex"]
+source_file="res://assets/mobs/Vilão 2/Sprites/Vilão 2/attack_animation_1-Recovered-Sheet.png"
+dest_files=["res://.godot/imported/attack_animation_1-Recovered-Sheet.png-6f4f89c3650b0c4796fa09bbbdcc3d8b.ctex"]
 
 [params]
 
