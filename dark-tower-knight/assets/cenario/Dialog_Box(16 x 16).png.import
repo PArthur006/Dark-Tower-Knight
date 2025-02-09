@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwy47sl0d45l7"
-path="res://.godot/imported/attack_animation_3.png-b2cc80e8564839830db9943eac8e0d5f.ctex"
+uid="uid://c7fys2qfv23ow"
+path="res://.godot/imported/Dialog_Box(16 x 16).png-0e13ade21b3b241dd23a48181acebb95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/Vilão 2/Sprites/Vilão 2/attack_animation_3.png"
-dest_files=["res://.godot/imported/attack_animation_3.png-b2cc80e8564839830db9943eac8e0d5f.ctex"]
+source_file="res://assets/cenario/Dialog_Box(16 x 16).png"
+dest_files=["res://.godot/imported/Dialog_Box(16 x 16).png-0e13ade21b3b241dd23a48181acebb95.ctex"]
 
 [params]
 

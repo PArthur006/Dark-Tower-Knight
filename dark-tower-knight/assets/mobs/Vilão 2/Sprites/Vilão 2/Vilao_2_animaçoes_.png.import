@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xrhlu2q7cdqh"
-path="res://.godot/imported/Vilao_2_animaçoes_.png-753351f17532f8c1ca0644f2d132c2e4.ctex"
+path="res://.godot/imported/Vilao_2_animaçoes_.png-cdc69ae0d527bf116d782ffddb8b08e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Vilão 2/Vilao_2_animaçoes_.png"
-dest_files=["res://.godot/imported/Vilao_2_animaçoes_.png-753351f17532f8c1ca0644f2d132c2e4.ctex"]
+source_file="res://assets/mobs/Vilão 2/Sprites/Vilão 2/Vilao_2_animaçoes_.png"
+dest_files=["res://.godot/imported/Vilao_2_animaçoes_.png-cdc69ae0d527bf116d782ffddb8b08e5.ctex"]
 
 [params]
 

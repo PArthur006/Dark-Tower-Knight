@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8mibbteb4w6i"
-path="res://.godot/imported/vilão_2_magia.png-35d0b54c7eef29453cd0e2e17cce0051.ctex"
+path="res://.godot/imported/vilão_2_magia.png-021f8127cc94fd643ef0d59ce6f2f6e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Vilão 2/vilão_2_magia.png"
-dest_files=["res://.godot/imported/vilão_2_magia.png-35d0b54c7eef29453cd0e2e17cce0051.ctex"]
+source_file="res://assets/mobs/Vilão 2/Sprites/Vilão 2/vilão_2_magia.png"
+dest_files=["res://.godot/imported/vilão_2_magia.png-021f8127cc94fd643ef0d59ce6f2f6e5.ctex"]
 
 [params]
 

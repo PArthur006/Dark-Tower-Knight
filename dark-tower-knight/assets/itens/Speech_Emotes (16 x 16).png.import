@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwy47sl0d45l7"
-path="res://.godot/imported/attack_animation_3.png-b2cc80e8564839830db9943eac8e0d5f.ctex"
+uid="uid://x6nkj1ucobtj"
+path="res://.godot/imported/Speech_Emotes (16 x 16).png-b25d8b4ab8899eebb3ca10071df57d1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mobs/Vilão 2/Sprites/Vilão 2/attack_animation_3.png"
-dest_files=["res://.godot/imported/attack_animation_3.png-b2cc80e8564839830db9943eac8e0d5f.ctex"]
+source_file="res://assets/itens/Speech_Emotes (16 x 16).png"
+dest_files=["res://.godot/imported/Speech_Emotes (16 x 16).png-b25d8b4ab8899eebb3ca10071df57d1d.ctex"]
 
 [params]
 
