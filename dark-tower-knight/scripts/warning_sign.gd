@@ -15,7 +15,7 @@ const lines: Array[String] = [
 	"Coragem. Força. Determinação",
 	"Sua jornada começa agora...",
 ]
-
+#interect
 
 func _unhandled_input(event):
 	if area_sign.get_overlapping_bodies().size() > 0:
