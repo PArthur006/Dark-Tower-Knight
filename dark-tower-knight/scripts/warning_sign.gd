@@ -15,12 +15,12 @@ const lines: Array[String] = [
 	"Coragem. Força. Determinação",
 	"Sua jornada começa agora...",
 ]
-
+#interect
 
 func _unhandled_input(event):
 	if area_sign.get_overlapping_bodies().size() > 0:
 		texture.show()
-		if event.is_action_pressed("interect") && !DialogManager.is_message_active:
+		if event.is_action_pressed("ui_focus_next") && !DialogManager.is_message_active:
 			texture.hide()
 			DialogManager.start_message(global_position, lines)
 	else:
