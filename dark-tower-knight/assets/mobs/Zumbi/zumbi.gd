@@ -47,7 +47,7 @@ func die():
 	queue_free()
 	
 
-#Ataque esqueleto
+#Ataque zumbi
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Player") and not body.is_atacking:
 		anim.play("Attack")
@@ -56,5 +56,4 @@ func _on_hitbox_body_entered(body):
 #Levou dano
 func _on_hurt_box_body_entered(body):
 	if body.is_in_group("Player") and body.is_atacking:
-		print("Esqueleto",health)
 		take_damage(body.atack_damage)
