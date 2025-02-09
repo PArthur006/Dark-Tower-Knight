@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://beg1h6bnkyfpg"]
 
-[ext_resource type="Texture2D" uid="uid://dv465h4cb7jqh" path="res://Vilão 2/Sprite-explosão-Sheet.png" id="1_uw6so"]
-[ext_resource type="Script" path="res://explosion.gd" id="2_cb21l"]
+[ext_resource type="Texture2D" uid="uid://dv465h4cb7jqh" path="res://assets/mobs/Vilão 2/Sprites/Vilão 2/Sprite-explosão-Sheet.png" id="1_uw6so"]
+[ext_resource type="Script" path="res://assets/mobs/Vilão 2/Sprites/explosion.gd" id="2_cb21l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e01k0"]
 atlas = ExtResource("1_uw6so")
