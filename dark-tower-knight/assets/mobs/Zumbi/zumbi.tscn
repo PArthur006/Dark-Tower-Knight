@@ -216,7 +216,7 @@ height = 20.0
 size = Vector2(10, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_731fq"]
-size = Vector2(15.75, 20)
+size = Vector2(17, 21)
 
 [node name="Zumbi" type="CharacterBody2D" groups=["Inimigo"]]
 collision_layer = 4
@@ -225,9 +225,8 @@ script = ExtResource("1_3hkk0")
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_yoiqs")
-animation = &"Death"
+animation = &"Walk"
 autoplay = "Walk"
-frame_progress = 0.3552
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2
@@ -236,12 +235,13 @@ shape = SubResource("CapsuleShape2D_0pib0")
 
 [node name="WallDetector" type="RayCast2D" parent="."]
 position = Vector2(0, 2)
-target_position = Vector2(7, 0)
-collision_mask = 6
+target_position = Vector2(9, 0)
+collision_mask = 22
 
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+visible = false
 position = Vector2(5, 0)
 shape = SubResource("RectangleShape2D_vsr1g")
 debug_color = Color(0.835443, 0.0012772, 0.933365, 0.42)
@@ -249,7 +249,8 @@ debug_color = Color(0.835443, 0.0012772, 0.933365, 0.42)
 [node name="HurtBox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2(-2.875, 0)
+visible = false
+position = Vector2(-3.5, -0.5)
 shape = SubResource("RectangleShape2D_731fq")
 debug_color = Color(0.990868, 0, 0.272927, 0.42)
 

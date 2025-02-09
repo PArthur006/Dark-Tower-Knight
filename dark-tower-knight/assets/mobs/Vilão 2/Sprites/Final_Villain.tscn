@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://c1cw5nby05wm7"]
 
-[ext_resource type="Script" path="res://final_villain.gd" id="1_4phcs"]
-[ext_resource type="Texture2D" uid="uid://xrhlu2q7cdqh" path="res://Vilão 2/Vilao_2_animaçoes_.png" id="2_303gr"]
+[ext_resource type="Script" path="res://assets/mobs/Vilão 2/Sprites/final_villain.gd" id="1_4phcs"]
+[ext_resource type="Texture2D" uid="uid://xrhlu2q7cdqh" path="res://assets/mobs/Vilão 2/Sprites/Vilão 2/Vilao_2_animaçoes_.png" id="2_303gr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vp0q"]
 size = Vector2(22, 31)
@@ -63,6 +63,33 @@ tracks/0/keys = {
 "values": [10]
 }
 
+[sub_resource type="Animation" id="Animation_it6af"]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [11, 12, 13, 14, 15]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("collision:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.866667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+
 [sub_resource type="Animation" id="Animation_in45g"]
 resource_name = "idle"
 tracks/0/type = "value"
@@ -93,33 +120,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 0, 1]
-}
-
-[sub_resource type="Animation" id="Animation_it6af"]
-resource_name = "death"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [11, 12, 13, 14, 15]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("collision:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.866667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ecwc1"]
@@ -188,16 +188,18 @@ states/moving/position = Vector2(436, 100)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_c3am1"), "idle", "moving", SubResource("AnimationNodeStateMachineTransition_yjyj4"), "moving", "Shadow_Ball_Attack", SubResource("AnimationNodeStateMachineTransition_gqw3h"), "Shadow_Ball_Attack", "moving", SubResource("AnimationNodeStateMachineTransition_ytkcy"), "moving", "Take_Hit", SubResource("AnimationNodeStateMachineTransition_3tvfn"), "Shadow_Ball_Attack", "Take_Hit", SubResource("AnimationNodeStateMachineTransition_afybh"), "Take_Hit", "moving", SubResource("AnimationNodeStateMachineTransition_5mxwd")]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1e7jy"]
-size = Vector2(21, 31)
+size = Vector2(32, 33.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n1lu4"]
 size = Vector2(112, 27)
 
-[node name="Vilão_Final" type="CharacterBody2D"]
+[node name="Vilão_Final" type="CharacterBody2D" groups=["Inimigo"]]
+z_index = 10
 collision_mask = 3
 script = ExtResource("1_4phcs")
 
 [node name="collision" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(1, 0.5)
 shape = SubResource("RectangleShape2D_8vp0q")
 
@@ -227,14 +229,16 @@ wait_time = 2.5
 [node name="wall_detector" type="RayCast2D" parent="."]
 position = Vector2(1, 0)
 target_position = Vector2(-16, 0)
+collision_mask = 22
 
 [node name="hurt_box" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurt_box"]
-position = Vector2(1, 1)
+position = Vector2(1, -0.25)
 shape = SubResource("RectangleShape2D_1e7jy")
 
 [node name="player_detector" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_detector"]
 position = Vector2(1, 3.5)
@@ -244,3 +248,4 @@ shape = SubResource("RectangleShape2D_n1lu4")
 position = Vector2(1, 4)
 
 [connection signal="body_entered" from="hurt_box" to="." method="_on_hurt_box_body_entered"]
+[connection signal="body_entered" from="player_detector" to="." method="_on_player_detector_body_entered"]

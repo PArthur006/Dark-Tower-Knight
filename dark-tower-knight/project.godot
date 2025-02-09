@@ -29,6 +29,7 @@ window/stretch/mode="viewport"
 [global_group]
 
 Player=""
+Inimigo=""
 
 [input]
 

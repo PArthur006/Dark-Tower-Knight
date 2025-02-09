@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SHADOW_BALL := preload("res://shadow_ball.tscn")
+const SHADOW_BALL := preload("res://assets/mobs/Vilão 2/Sprites/shadow_ball.tscn")
 const SPEED = 5000.0
 var direction := -1
 @onready var wall_detector: RayCast2D = $wall_detector
@@ -17,6 +17,7 @@ var can_attack := true
 var attack_count := 0
 var player_hit := false
 var boss_hp := 260
+var damage = 20
 
 func _ready():
 	set_physics_process(false)
@@ -25,9 +26,9 @@ func _physics_process(delta: float) -> void:
 	
 	if wall_detector.is_colliding():
 		direction *= -1
-		wall_detector.sacle.x *= -1
+		wall_detector.scale.x *= -1
 		turn_count += 1
-	
+	print(boss_hp)
 	
 	
 	
@@ -78,11 +79,15 @@ func _on_attack_cooldown_tiemout():
 	can_attack = true
 
 
-func _on_player_body_entered(body):
+func _on_hurt_box_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Player") and body.is_atacking:
+		take_damage(body.atack_damage)
+		player_hit = true
+		turn_count = 0
+
+
+func _on_player_detector_body_entered(body: Node2D) -> void:
 	set_physics_process(true)
 
-func _on_hurt_box_body_entered(body: Node2D) -> void:
-	body.velocity = Vector2(50, -300)
-	boss_hp -= 20
-	player_hit = true
-	turn_count = 0
+func take_damage(amount: int):
+	boss_hp = boss_hp - 20
