@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7um00sw00sp"
+path="res://.godot/imported/Musica Tema-versao 2 VF.mp3-b74fc78ba4de801944aa9e2085daa793.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Musica Tema-versao 2 VF.mp3"
+dest_files=["res://.godot/imported/Musica Tema-versao 2 VF.mp3-b74fc78ba4de801944aa9e2085daa793.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

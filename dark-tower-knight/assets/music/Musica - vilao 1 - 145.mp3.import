@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsk5cqmru6u0q"
+path="res://.godot/imported/Musica - vilao 1 - 145.mp3-24e98dedcc7ba55b5256e02e05a05b35.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Musica - vilao 1 - 145.mp3"
+dest_files=["res://.godot/imported/Musica - vilao 1 - 145.mp3-24e98dedcc7ba55b5256e02e05a05b35.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

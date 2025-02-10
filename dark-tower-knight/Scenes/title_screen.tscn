@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cexqy2gm6iuc0"]
+[gd_scene load_steps=9 format=3 uid="uid://cexqy2gm6iuc0"]
 
 [ext_resource type="Script" path="res://scripts/title_screen.gd" id="1_7tdm3"]
 [ext_resource type="Texture2D" uid="uid://da4ne0bfmarw2" path="res://assets/screens/TitleScreen.webp" id="2_4qmmc"]
+[ext_resource type="AudioStream" uid="uid://c7km7syhy8kcd" path="res://assets/music/Musica-Sprint1 - versao 1.2.mp3" id="2_njdqa"]
 [ext_resource type="Texture2D" uid="uid://dkbc3fkqiyspy" path="res://assets/screens/TitleGame.png" id="3_af7v4"]
 [ext_resource type="Theme" uid="uid://b4q31cdpepgrh" path="res://prefebs/default_btns.tres" id="4_unlap"]
 
@@ -247,6 +248,12 @@ libraries = {
 "": SubResource("AnimationLibrary_ykg02")
 }
 autoplay = "reveal"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_njdqa")
+autoplay = true
+playback_type = 1
+parameters/looping = true
 
 [connection signal="pressed" from="start_btn" to="." method="_on_start_btn_pressed"]
 [connection signal="pressed" from="credits_btn" to="." method="_on_credits_btn_pressed"]

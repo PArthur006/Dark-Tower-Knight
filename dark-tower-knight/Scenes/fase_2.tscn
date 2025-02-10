@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=4 uid="uid://je5kgo8v5s2l"]
+[gd_scene load_steps=55 format=4 uid="uid://je5kgo8v5s2l"]
 
 [ext_resource type="Texture2D" uid="uid://bhv765wupbkhc" path="res://assets/cenario/plataformas/Blocks (16 x 16).png" id="1_j70j0"]
 [ext_resource type="PackedScene" uid="uid://b4m3xtk0bj3oy" path="res://prefebs/falling_platform.tscn" id="1_rxqsk"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://csntg8g37rfar" path="res://assets/cenario/Tiles.png" id="15_wrhe3"]
 [ext_resource type="PackedScene" uid="uid://c1cw5nby05wm7" path="res://assets/mobs/Vilão 2/Sprites/Final_Villain.tscn" id="19_33n3g"]
 [ext_resource type="PackedScene" uid="uid://etgm2uqugcb3" path="res://assets/mobs/Zumbi/zumbi.tscn" id="20_ojqox"]
+[ext_resource type="AudioStream" uid="uid://dsk5cqmru6u0q" path="res://assets/music/Musica - vilao 1 - 145.mp3" id="21_elbu3"]
 
 [sub_resource type="GDScript" id="GDScript_80mvv"]
 script/source = "extends Node2D
@@ -13988,7 +13989,7 @@ script = SubResource("GDScript_80mvv")
 
 [node name="player" parent="." instance=ExtResource("13_jd7ik")]
 z_index = 10
-position = Vector2(35, 188)
+position = Vector2(29, 174)
 collision_mask = 3
 
 [node name="Plataformas" type="Node" parent="."]
@@ -14210,3 +14211,9 @@ shape = SubResource("RectangleShape2D_apsw7")
 z_index = 10
 position = Vector2(3638, 185)
 shape = SubResource("RectangleShape2D_nfb23")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_elbu3")
+autoplay = true
+playback_type = 1
+parameters/looping = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://1f6lpl7tvl6w"]
+[gd_scene load_steps=30 format=4 uid="uid://1f6lpl7tvl6w"]
 
 [ext_resource type="Texture2D" uid="uid://2jr2nqvr386o" path="res://assets/cenario/plataformas/PixelFantasy_Caves/props2.png" id="1_k5611"]
 [ext_resource type="Texture2D" uid="uid://b1yc0komeilkv" path="res://assets/cenario/tileset_mk_16_16_nature_tileset_godot.png" id="2_1kpsv"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" path="res://scripts/warning_sign.gd" id="16_yt4oq"]
 [ext_resource type="Texture2D" uid="uid://x6nkj1ucobtj" path="res://assets/itens/Speech_Emotes (16 x 16).png" id="17_6gvga"]
 [ext_resource type="PackedScene" uid="uid://bvmmin31ks5k7" path="res://assets/mobs/ESQUELETO/Esqueleto.tscn" id="18_tk435"]
+[ext_resource type="AudioStream" uid="uid://cn4dsc2mjtcqe" path="res://assets/music/Musica da Floresta BASE - 145.mp3" id="19_wy45n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f54v2"]
 texture = ExtResource("1_k5611")
@@ -6050,3 +6051,9 @@ shape = SubResource("RectangleShape2D_ylqat")
 [node name="P6" type="CollisionShape2D" parent="Paredes"]
 position = Vector2(1620, 242)
 shape = SubResource("RectangleShape2D_ylqat")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_wy45n")
+autoplay = true
+playback_type = 1
+parameters/looping = true

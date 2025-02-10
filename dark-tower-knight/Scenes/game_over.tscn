@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cq6syr7v8ikt6"]
+[gd_scene load_steps=9 format=3 uid="uid://cq6syr7v8ikt6"]
 
 [ext_resource type="Texture2D" uid="uid://s5k1scwndhqv" path="res://assets/screens/GameOver.jpg" id="1_1oewp"]
 [ext_resource type="Script" path="res://scripts/game_over.gd" id="1_fl2be"]
 [ext_resource type="Texture2D" uid="uid://dlvosm8pa2bfy" path="res://assets/screens/GameOver_Logo.png" id="2_d1dqu"]
 [ext_resource type="Theme" uid="uid://b4q31cdpepgrh" path="res://prefebs/default_btns.tres" id="3_4o2wc"]
+[ext_resource type="AudioStream" uid="uid://c7ctmfvlg7teq" path="res://assets/music/Musica - vilao 2 - 145.mp3" id="5_2xpg0"]
 
 [sub_resource type="Animation" id="Animation_s2sbw"]
 length = 0.001
@@ -162,6 +163,11 @@ libraries = {
 "": SubResource("AnimationLibrary_b8r1v")
 }
 autoplay = "fase_in"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_2xpg0")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="VBoxContainer/Restart_btn" to="." method="_on_restart_btn_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit_btn" to="." method="_on_quit_btn_pressed"]
