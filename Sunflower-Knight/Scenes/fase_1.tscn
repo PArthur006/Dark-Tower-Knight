@@ -5972,7 +5972,9 @@ position = Vector2(142, -14)
 motion_mirroring = Vector2(288, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/ParallaxBackground/Nuvem"]
+position = Vector2(-139, -101)
 texture = ExtResource("10_sdqeg")
+centered = false
 
 [node name="Itens" type="Node" parent="."]
 
