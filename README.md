@@ -43,6 +43,23 @@ O projeto está sendo desenvolvido pelo **Feudo Amarelo Girassol**, uma equipe e
 
 ---
 
+## Como Baixar e Jogar
+
+### 📥 Download  
+1. Acesse o repositório do jogo no GitHub.  
+2. Clique no botão **Code** e selecione **Download ZIP**.  
+3. Extraia os arquivos em uma pasta de sua escolha.  
+
+### ▶️ Como Jogar  
+1. Certifique-se de ter o ([**Godot Engine**](https://store.steampowered.com/app/404790/Godot_Engine/)) instalado.  
+2. Abra o **Godot** e clique em **Importar Projeto**.  
+3. Navegue até a pasta extraída e selecione o arquivo **project.godot**.  
+4. Clique em **Executar** (ou pressione `F5`) para iniciar o jogo!  
+
+Caso encontre problemas, entre em contato com os desenvolvedores ou abra uma issue no repositório.  
+
+---
+
 ## 🌱 **Contribuições e Feedback**  
 
 Estamos abertos a sugestões e contribuições para tornar **Sunflower Knight** ainda melhor. Para feedback ou relatórios de bugs, abra uma [issue](https://github.com/PArthur006/Dark-Tower-Knight/issues).  
