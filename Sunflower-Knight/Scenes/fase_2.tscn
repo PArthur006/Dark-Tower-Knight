@@ -25,23 +25,26 @@
 [sub_resource type="GDScript" id="GDScript_80mvv"]
 script/source = "extends Node2D
 
-@onready var anim := $Animation as AnimationPlayer
-@onready var respawn_timer := $Respawn as Timer
-@onready var respawn_position := global_position
+# Inicialização de nós e variáveis
+@onready var anim := $Animation as AnimationPlayer  # Controla as animações da fase, se necessário
+@onready var respawn_timer := $Respawn as Timer  # Temporizador para o respawn
+@onready var respawn_position := global_position  # Guarda a posição inicial para o respawn
 
-@export var reset_timer := 3.0
+@export var reset_timer := 3.0  # Tempo (em segundos) para o respawn
 
-var velocity := Vector2.ZERO
-var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
-var is_triggered := false
+# Controle de movimento e estado
+var velocity := Vector2.ZERO  # Armazena a velocidade da fase (ou objeto relacionado)
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")  # Obtém a gravidade padrão do projeto
+var is_triggered := false  # Indica se o evento já foi acionado
 
+# Desativa o processamento de física ao iniciar
 func _ready() -> void:
-	set_physics_process(false) 
+	set_physics_process(false)  # A física só será ativada quando necessário
 
-
+# Processamento físico: aplica gravidade e movimenta o nó
 func _physics_process(delta):
-	velocity.y += gravity * delta
-	position += velocity * delta
+	velocity.y += gravity * delta  # Aplica a gravidade ao vetor de velocidade
+	position += velocity * delta  # Move o objeto com base na velocidade calculada
 "
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x3dco"]

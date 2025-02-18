@@ -96,17 +96,27 @@ func take_damage(amount: int):
 
 #GAME OVER
 func die():
+	# Marca o jogador como morto
 	death = true
 	print("O jogador morreu")
+
+	# Reduz uma vida
 	lives -= 1
-	print("vidas restantes:", lives)
+	print("Vidas restantes:", lives)
+
+	# Aguarda 1 segundo antes de continuar a execução
 	await get_tree().create_timer(1.0).timeout
+
+	# Reativa o jogador após o tempo de espera
 	death = false
+
+	# Verifica se ainda há vidas restantes
 	if lives > 0:
 		print("Reaparecendo na posição inicial")
-		health = 100 # Restaura a vida
-		global_position = start_position # Retorna à posição inicial
+		health = 100  # Restaura a vida ao máximo
+		global_position = start_position  # Retorna o jogador à posição inicial
 	else:
+		# Se não houver vidas, muda para a cena de game over
 		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
 		
 #ANIMAÇÕES
